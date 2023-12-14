@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+table {
+    /* width: 50%; */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th#date_filter{
+    cursor: pointer;
+
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#create_request{
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+
+#editBtn{
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+
+.modal_overlay.show{
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+
+.modal_overlay{
+    position: absolute;
+    background-color: rgb(133, 133, 133, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+
+.modal_content{
+    background-color: #fff;
+    width: 650px;
+    height: 400px;
+    padding: 15px;
+    padding-top: 30px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.modal_content .exit_btn{
+    position: absolute;
+    right: 15px;
+    top:10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+textarea{
+    max-height: 150px;
+}
+
+
+.form-element{
+    margin-bottom: 15px !important;
+
+}
+
+.completed{
+    color: #28a745;
+    font-weight: bold; 
+}
+
+.pending{
+    color: #cbdb35;
+    font-weight: bold; 
+}
+.not_completed{
+    color: #f02a2a;
+    font-weight: bold; 
+}
